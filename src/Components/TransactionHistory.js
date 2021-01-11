@@ -18,8 +18,8 @@ import { ControlCameraTwoTone } from "@material-ui/icons";
 export const TransactionHistory = () => {
   const { addTransaction } = useContext(GlobalContext);
 
-  const [desc, setDes] = useState(null);
-  const [trans, setTrans] = useState(null);
+  const [desc, setDes] = useState();
+  const [trans, setTrans] = useState();
   //console.log(useContext(GlobalContext));
   const { transactions } = useContext(GlobalContext);
   console.log("t=", transactions);
