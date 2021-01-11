@@ -23,7 +23,7 @@ export const AccountSummary = () => {
   //console.log('INCOME', income);
   //setTotalIncome(income.reduce((acc,item)=> (acc += item))); 
   //console.log('INCOME', totalIncome);
- const expense = amounts.filter(i => i < 0).reduce((acc, i) => (acc += i),0) ;
+ const expense = amounts.filter(i => i < 0).reduce((acc, i) => (acc += i),0).toFixed(2) ;
   //console.log('EXPENSE', expense);
   //const totalExpense = Math.abs(expense.reduce((acc,item)=> (acc += item)) ) ; 
     //setTotalExpense(Math.abs(expense.reduce((acc,item)=> (acc += item)) ));

@@ -27,8 +27,8 @@ export const TransactionHistory = () => {
   const onSubmit = (e) => {
     e.preventDefault();
     console.log("ADD CLICKED", desc, trans);
-    setDes(null);
-    setTrans(null);
+    setDes("");
+    setTrans("");
 
     const newTransaction = {
       id: Math.floor(Math.random() * 100000000),
@@ -76,7 +76,7 @@ export const TransactionHistory = () => {
               onChange={(e) => {
                 setDes(e.target.value);
               }}
-              placeholder="Transaction Details"
+              
               variant="outlined"
               size="small"
               color="primary"
@@ -86,13 +86,13 @@ export const TransactionHistory = () => {
           <span className="fields"> 
             <TextField
               id="description"
-              label="Amount"
+              label="Amount + / - "
               type="text"
               value={trans}
               onChange={(e) => {
                 setTrans(e.target.value);
               }}
-              placeholder="Transaction Amount"
+              
               size="small"
               color="primary"
               variant="outlined"
