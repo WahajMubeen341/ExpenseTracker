@@ -85,7 +85,7 @@ export const TransactionHistory = () => {
           <br /> <br />
           <span className="fields"> 
             <TextField
-              id="description"
+              
               label="Amount + / - "
               type="text"
               value={trans}
