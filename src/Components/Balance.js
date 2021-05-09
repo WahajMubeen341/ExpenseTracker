@@ -14,7 +14,7 @@ export const Balance = () => {
   return (
     <div>
       <h4>Current Balance</h4>
-      <h1>${totalBalance}</h1>
+      <h1 style={{color:'black'}}>${totalBalance}</h1>
     </div>
   );
 };

@@ -32,7 +32,7 @@ export const AccountSummary = () => {
 
   return (
     <div style={{ display:"flex", justifyContent:"center",}}>
-      <Card style={{width:'400px', display:"flex", justifyContent:"center",}}>
+      <Card style={{width:'400px', display:"flex", justifyContent:"center", backgroundColor:'rgba(253, 255, 255,0.7)'}}>
         <CardContent>
           <div>
             <h2>Income</h2>

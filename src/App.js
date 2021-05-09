@@ -18,6 +18,7 @@ function App() {
     <div className="App" style={{display:"flex", justifyContent:"center",}}>
     
       <div className="container">
+      <Paper elevation={10}  style={{maxWidth:"600px", width:"500px", backgroundColor:'rgba(253, 255, 255,0.5)'}}>
       <Header/>
      
       <Balance/>
@@ -27,10 +28,11 @@ function App() {
       <TransactionHistory/>
       
       
-     
+      </Paper>
       </div>
        
     </div>
+
     </GlobalProvider>
   );
 }

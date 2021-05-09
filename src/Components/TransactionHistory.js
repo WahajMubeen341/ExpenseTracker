@@ -18,8 +18,8 @@ import { ControlCameraTwoTone } from "@material-ui/icons";
 export const TransactionHistory = () => {
   const { addTransaction } = useContext(GlobalContext);
 
-  const [desc, setDes] = useState();
-  const [trans, setTrans] = useState();
+  const [desc, setDes] = useState(null);
+  const [trans, setTrans] = useState(null);
   //console.log(useContext(GlobalContext));
   const { transactions } = useContext(GlobalContext);
   console.log("t=", transactions);
@@ -27,8 +27,8 @@ export const TransactionHistory = () => {
   const onSubmit = (e) => {
     e.preventDefault();
     console.log("ADD CLICKED", desc, trans);
-    setDes("");
-    setTrans("");
+    setDes(null);
+    setTrans(null);
 
     const newTransaction = {
       id: Math.floor(Math.random() * 100000000),
@@ -65,7 +65,7 @@ export const TransactionHistory = () => {
       <Divider variant="middle" />
 
       <form onSubmit={onSubmit}>
-        <Paper elevation={0} style={{ width: "400px" }}>
+        <Paper elevation={0} style={{backgroundColor:'rgba(253, 255, 255,0.9)'}}>
           <br />
           <span className="fields">
             <TextField
@@ -105,7 +105,7 @@ export const TransactionHistory = () => {
           <br /> <br />
         </Paper>
         <div>
-          <Button className="btn" variant="contained" color="primary" type="submit">
+          <Button className="btn" variant="contained" color="primary" type="submit" style={{maxWidth:"100px"}}>
             Add
           </Button>
           <br /> <br />
